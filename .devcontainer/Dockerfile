@@ -29,14 +29,14 @@ RUN \
 USER $USERNAME
 
 # Install Go tools
-RUN \
-    # --> Goimports
-    go install -v golang.org/x/tools/cmd/goimports@latest \
-    # # --> Gotestsum
-    && go install -v gotest.tools/gotestsum@latest \
-    # # --> Go symbols and outline for go to symbol support and test support 
-    && go install github.com/acroca/go-symbols@v0.1.1 \
-    # # --> Static checker
-    && go install honnef.co/go/tools/cmd/staticcheck@v0.3.2 \
-    # # --> TF formatter
-    && go install github.com/katbyte/terrafmt@latest
+# RUN \
+#     # --> Goimports
+#     go install -v golang.org/x/tools/cmd/goimports@latest \
+#     # # --> Gotestsum
+#     && go install -v gotest.tools/gotestsum@latest \
+#     # # --> Go symbols and outline for go to symbol support and test support 
+#     && go install github.com/acroca/go-symbols@v0.1.1 \
+#     # # --> Static checker
+#     && go install honnef.co/go/tools/cmd/staticcheck@v0.3.2 \
+#     # # --> TF formatter
+#     && go install github.com/katbyte/terrafmt@latest
