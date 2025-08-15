@@ -103,7 +103,7 @@ require (
 )
 
 tool (
-	golang.org/x/tools/cmd/goimports
+	golang.org/x/tools/cmd/goimports v0.24.0
 	gotest.tools/gotestsum
 	honnef.co/go/tools/cmd/staticcheck
 )
