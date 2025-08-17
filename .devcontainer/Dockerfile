@@ -33,7 +33,7 @@ RUN \
     # --> Goimports
     go install -v golang.org/x/tools/cmd/goimports@v0.24.0 \
     # # --> Gotestsum
-    && go install -v gotest.tools/gotestsum@latest \
+    && go install -v gotest.tools/gotestsum@v1.12.3 \
     # # --> Go symbols and outline for go to symbol support and test support
     && go install github.com/acroca/go-symbols@v0.1.1 \
     # # --> Static checker
