@@ -31,7 +31,7 @@ USER $USERNAME
 # Install Go tools
 RUN \
     # --> Goimports
-    go install -v golang.org/x/tools/cmd/goimports@latest \
+    go install -v golang.org/x/tools/cmd/goimports@v0.24.0 \
     # # --> Gotestsum
     && go install -v gotest.tools/gotestsum@latest \
     # # --> Go symbols and outline for go to symbol support and test support
