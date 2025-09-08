@@ -297,6 +297,8 @@ func (c *DatabricksClient) scimVisitor(r *http.Request) error {
 		// `/api/2.0` is added by completeUrl visitor
 		r.URL.Path = strings.ReplaceAll(r.URL.Path, "/api/2.0/preview",
 			fmt.Sprintf("/api/2.0/accounts/%s", c.Config.AccountID))
+	} else {
+		r.URL.Path = strings.ReplaceAll(r.URL.Path, "/api/2.0/preview", "/api/2.0/account")
 	}
 	return nil
 }
